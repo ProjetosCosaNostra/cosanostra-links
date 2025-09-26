@@ -1,27 +1,27 @@
 /* ===========================
-   Vídeo / Criação Audiovisual
+   Imagem / Design Visual
 =========================== */
-.video {
+.image {
     padding: 80px 20px;
     text-align: center;
-    background: linear-gradient(180deg, #1a1a1a, #0d0d0d);
+    background: linear-gradient(180deg, #0d0d0d, #1a1a1a);
     border-top: 1px solid #333;
 }
 
-.video h2 {
+.image h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
     margin-bottom: 15px;
     color: #d4af37;
 }
 
-.video p {
+.image p {
     margin-bottom: 40px;
     font-size: 1.1rem;
     color: #bbb;
 }
 
-.video .card-grid {
+.image .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
@@ -29,8 +29,8 @@
     margin: 0 auto;
 }
 
-.video .card {
-    background: linear-gradient(145deg, #111, #1c1c1c);
+.image .card {
+    background: linear-gradient(145deg, #1c1c1c, #111);
     border: 1px solid #333;
     border-radius: 12px;
     padding: 25px;
@@ -38,26 +38,26 @@
     color: #f5f5f5;
 }
 
-.video .card:hover {
+.image .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
     border-color: #d4af37;
 }
 
-.video .card .icon {
+.image .card .icon {
     font-size: 2rem;
     margin-bottom: 15px;
     color: #d4af37;
 }
 
-.video .card h3 {
+.image .card h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
     margin-bottom: 10px;
     color: #d4af37;
 }
 
-.video .card p {
+.image .card p {
     font-size: 0.95rem;
     color: #ccc;
 }
