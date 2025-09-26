@@ -10,6 +10,7 @@ Bem-vindo à central oficial de links do **Cosa Nostra AI Syndicate** – um pro
 - ▶️ [YouTube](#)  
 - 🎥 [Kwai](#)  
 - 📘 [Facebook](#)  
+- 💼 [LinkedIn](https://linkedin.com/in/felipecosanostra)  
 - 🧑‍💻 [GitHub](https://github.com/ProjetosCosaNostra)  
 
 ---
@@ -29,4 +30,5 @@ Estamos construindo uma rede de projetos criativos e tecnológicos.
 👉 Acompanhe, compartilhe e faça parte dessa jornada.  
 
 ---
+
 ✍️ *Cosa Nostra AI Syndicate – Criatividade e Tecnologia no estilo Cosa Nostra.*
