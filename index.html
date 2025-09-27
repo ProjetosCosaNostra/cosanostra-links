@@ -8,37 +8,55 @@
   <script src="lang.js" defer></script>
 </head>
 <body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html" data-lang-pt="🏠 Início" data-lang-en="🏠 Home">🏠 Início</a></li>
+      <li><a href="links.html" data-lang-pt="🌐 Links" data-lang-en="🌐 Links">🌐 Links</a></li>
+      <li><a href="terms.html" data-lang-pt="📜 Termos" data-lang-en="📜 Terms">📜 Termos</a></li>
+      <li><a href="privacy.html" data-lang-pt="🔒 Política" data-lang-en="🔒 Privacy">🔒 Política</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
   <div class="container">
-    <!-- Logo -->
-    <img src="assets/logo-512.png" alt="Logo Cosa Nostra" class="logo">
+    <header>
+      <img src="assets/logo-512.png" alt="Logo Cosa Nostra" class="logo">
+      <h1 data-lang-pt="🧠 Cosa Nostra AI Syndicate" 
+          data-lang-en="🧠 Cosa Nostra AI Syndicate">
+          🧠 Cosa Nostra AI Syndicate
+      </h1>
+      <p data-lang-pt="Criatividade, Automação e Inteligência Artificial no estilo Cosa Nostra."
+         data-lang-en="Creativity, Automation, and Artificial Intelligence in Cosa Nostra style.">
+         Criatividade, Automação e Inteligência Artificial no estilo Cosa Nostra.
+      </p>
+    </header>
 
-    <!-- Título -->
-    <h1 class="title">
-      <span class="emoji">🧠</span> 
-      <span data-lang="title">Cosa Nostra AI Syndicate</span> 
-      <span class="emoji">⚙️📊</span>
-    </h1>
+    <section>
+      <h2 data-lang-pt="🚀 Nossa Missão" data-lang-en="🚀 Our Mission">🚀 Nossa Missão</h2>
+      <p data-lang-pt="Unir humor, tecnologia e automação para transformar ideias em projetos digitais poderosos."
+         data-lang-en="Unite humor, technology, and automation to transform ideas into powerful digital projects.">
+         Unir humor, tecnologia e automação para transformar ideias em projetos digitais poderosos.
+      </p>
+    </section>
 
-    <!-- Subtítulo -->
-    <p class="subtitle" data-lang="subtitle">
-      Criatividade, Automação e Estratégia no estilo Cosa Nostra.
-    </p>
+    <section>
+      <h2 data-lang-pt="🎯 Projetos em Destaque" data-lang-en="🎯 Featured Projects">🎯 Projetos em Destaque</h2>
+      <ul>
+        <li data-lang-pt="🎩 O Capo da Criação" data-lang-en="🎩 The Creation Capo">🎩 O Capo da Criação</li>
+        <li data-lang-pt="📰 Fantástico Brainrot – Telejornal Satírico" 
+            data-lang-en="📰 Fantastic Brainrot – Satirical News">📰 Fantástico Brainrot – Telejornal Satírico</li>
+        <li data-lang-pt="🎙 Papo de Husk – Podcast" data-lang-en="🎙 Papo de Husk – Podcast">🎙 Papo de Husk – Podcast</li>
+      </ul>
+    </section>
 
-    <!-- Botão principal -->
-    <a href="links.html" class="btn-main" data-lang="btn-access">
-      🌐 Acessar Nossas Redes
-    </a>
-
-    <!-- Botões de idioma -->
-    <div class="lang-switch">
-      <button onclick="setLanguage('pt')" class="lang-btn">🇧🇷 PT</button>
-      <button onclick="setLanguage('en')" class="lang-btn">🇺🇸 EN</button>
-    </div>
+    <footer>
+      <p data-lang-pt="✍️ Cosa Nostra AI Syndicate – Criatividade e Tecnologia." 
+         data-lang-en="✍️ Cosa Nostra AI Syndicate – Creativity & Technology.">
+         ✍️ Cosa Nostra AI Syndicate – Criatividade e Tecnologia.
+      </p>
+      <button onclick="switchLang()" class="lang-btn">🌐 PT/EN</button>
+    </footer>
   </div>
-
-  <!-- Rodapé -->
-  <footer>
-    <p>© 2025 Cosa Nostra Syndicate — O Código Eterno.</p>
-  </footer>
 </body>
 </html>
