@@ -1,4 +1,79 @@
 /* ===========================
+   Reset básico
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background: #0d0d0d;
+  line-height: 1.6;
+}
+
+/* ===========================
+   Hero Section
+=========================== */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("assets/bg.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero .logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #d4af37;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 12px rgba(212, 175, 55, 0.7);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #d4af37;
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* ===========================
    Switch de Idioma
 =========================== */
 .lang-switch {
@@ -22,4 +97,104 @@
 .lang-switch button:hover {
   background: #d4af37;
   color: #000;
+}
+
+/* ===========================
+   Sections
+=========================== */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #111;
+}
+
+.section.alt {
+  background: #1a1a1a;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #d4af37;
+  text-shadow: 0px 0px 8px rgba(212, 175, 55, 0.6);
+}
+
+.section p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.section ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.section ul li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+/* ===========================
+   Cards (links sociais)
+=========================== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  display: block;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  color: #d4af37;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: #d4af37;
+  color: #000;
+  transform: translateY(-5px);
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+  background: #0d0d0d;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+footer p {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer .social-links a {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #fff;
 }
