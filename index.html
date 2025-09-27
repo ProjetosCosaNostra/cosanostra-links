@@ -1,58 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cosa Nostra AI Syndicate</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/logo-512.jpg" type="image/png">
+  <script src="lang.js" defer></script>
 </head>
 <body>
-  <!-- ===== HEADER ===== -->
-  <header class="site-header">
-    <div class="logo-container">
-      <img 
-        src="assets/logo.png" 
-        srcset="assets/logo-512.jpg 512w, assets/logo-1024.jpg 1024w" 
-        sizes="(max-width: 600px) 512px, 1024px" 
-        alt="Logo Cosa Nostra" 
-        class="logo"
-      >
-      <h1 class="site-title">Cosa Nostra AI Syndicate</h1>
-      <p class="site-subtitle">Criatividade, Automação e Estratégia no estilo Cosa Nostra.</p>
-    </div>
-  </header>
+  <div class="container">
+    <!-- Logo -->
+    <img src="assets/logo-512.png" alt="Logo Cosa Nostra" class="logo">
 
-  <!-- ===== CTA PRINCIPAL ===== -->
-  <section class="cta">
-    <a href="links.html" class="btn-primary">🌐 Acessar Nossas Redes</a>
-    <div class="lang-switch">
-      <button class="btn-lang">🇧🇷 PT</button>
-      <button class="btn-lang">🇺🇸 EN</button>
-    </div>
-  </section>
+    <!-- Título -->
+    <h1 class="title">
+      <span class="emoji">🧠</span> 
+      <span data-lang="title">Cosa Nostra AI Syndicate</span> 
+      <span class="emoji">⚙️📊</span>
+    </h1>
 
-  <!-- ===== SOBRE ===== -->
-  <section class="about">
-    <h2>Sobre o Projeto</h2>
-    <p>
-      O <strong>Cosa Nostra AI Syndicate</strong> é um ecossistema criativo que une 
-      <span class="highlight">Inteligência Artificial</span>, 
-      <span class="highlight">Humor</span>, 
-      <span class="highlight">Automação</span> 
-      e <span class="highlight">Estratégias Digitais</span>.
+    <!-- Subtítulo -->
+    <p class="subtitle" data-lang="subtitle">
+      Criatividade, Automação e Estratégia no estilo Cosa Nostra.
     </p>
-    <ul class="projects">
-      <li>🎭 O Capo da Criação</li>
-      <li>📺 Fantástico Brainrot – Telejornal Satírico</li>
-      <li>🎙️ Papo de Husk – Podcast</li>
-    </ul>
-  </section>
 
-  <!-- ===== FOOTER ===== -->
+    <!-- Botão principal -->
+    <a href="links.html" class="btn-main" data-lang="btn-access">
+      🌐 Acessar Nossas Redes
+    </a>
+
+    <!-- Botões de idioma -->
+    <div class="lang-switch">
+      <button onclick="setLanguage('pt')" class="lang-btn">🇧🇷 PT</button>
+      <button onclick="setLanguage('en')" class="lang-btn">🇺🇸 EN</button>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
   <footer>
-    <p>© 2025 Cosa Nostra AI Syndicate — O Código Eterno.</p>
-    <a href="terms.html">📜 Termos de Serviço</a>
+    <p>© 2025 Cosa Nostra Syndicate — O Código Eterno.</p>
   </footer>
 </body>
 </html>
