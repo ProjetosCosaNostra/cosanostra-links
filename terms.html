@@ -1,79 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Termos de Serviço - Cosa Nostra</title>
+  <title>📜 Termos de Serviço - Cosa Nostra AI Syndicate</title>
   <link rel="stylesheet" href="style.css">
+  <script src="lang.js" defer></script>
 </head>
 <body>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <img src="assets/logo-512.png" alt="Logo Cosa Nostra" class="logo">
-      <h1>📜 Termos de Serviço</h1>
-      <p>Leia com atenção os termos antes de usar nossos serviços.</p>
-      <div class="lang-switch">
-        <button onclick="setLanguage('pt')">🇧🇷 Português</button>
-        <button onclick="setLanguage('en')">🇺🇸 English</button>
-      </div>
-    </div>
-  </section>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html" data-lang-pt="🏠 Início" data-lang-en="🏠 Home">🏠 Início</a></li>
+      <li><a href="links.html" data-lang-pt="🌐 Links" data-lang-en="🌐 Links">🌐 Links</a></li>
+      <li><a href="terms.html" data-lang-pt="📜 Termos" data-lang-en="📜 Terms">📜 Termos</a></li>
+      <li><a href="privacy.html" data-lang-pt="🔒 Política" data-lang-en="🔒 Privacy">🔒 Política</a></li>
+    </ul>
+  </nav>
 
-  <!-- CONTEÚDO -->
-  <section class="section" id="content">
-    <div class="lang lang-pt">
-      <h2>1. Introdução</h2>
-      <p>Bem-vindo ao projeto <strong>Cosa Nostra Grow</strong>. Ao acessar e utilizar nossos serviços, você concorda com os presentes Termos de Serviço.</p>
+  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+  <div class="container">
+    <header>
+      <h1 data-lang-pt="📜 Termos de Serviço" data-lang-en="📜 Terms of Service">📜 Termos de Serviço</h1>
+    </header>
 
-      <h2>2. Uso permitido</h2>
-      <p>O usuário se compromete a utilizar o sistema apenas para fins legais, respeitando as regras de uso das redes sociais e demais plataformas integradas.</p>
+    <section>
+      <h2 data-lang-pt="1. Aceitação" data-lang-en="1. Acceptance">1. Aceitação</h2>
+      <p data-lang-pt="Ao utilizar os serviços do Cosa Nostra AI Syndicate, você concorda com estes Termos." 
+         data-lang-en="By using Cosa Nostra AI Syndicate services, you agree to these Terms.">
+         Ao utilizar os serviços do Cosa Nostra AI Syndicate, você concorda com estes Termos.
+      </p>
+    </section>
 
-      <h2>3. Responsabilidade</h2>
-      <p>O <strong>Cosa Nostra Syndicate</strong> não se responsabiliza por usos indevidos, violações de direitos autorais ou descumprimento das políticas das plataformas de terceiros.</p>
+    <section>
+      <h2 data-lang-pt="2. Uso Permitido" data-lang-en="2. Permitted Use">2. Uso Permitido</h2>
+      <p data-lang-pt="Nossos serviços são voltados para fins criativos, educacionais e comerciais legítimos." 
+         data-lang-en="Our services are intended for creative, educational, and legitimate business purposes.">
+         Nossos serviços são voltados para fins criativos, educacionais e comerciais legítimos.
+      </p>
+    </section>
 
-      <h2>4. Alterações</h2>
-      <p>Reservamo-nos o direito de atualizar ou modificar estes termos a qualquer momento, sem aviso prévio. Recomenda-se a consulta periódica.</p>
+    <section>
+      <h2 data-lang-pt="3. Responsabilidades" data-lang-en="3. Responsibilities">3. Responsabilidades</h2>
+      <p data-lang-pt="O usuário é responsável pelo conteúdo publicado e por respeitar as leis aplicáveis." 
+         data-lang-en="The user is responsible for published content and compliance with applicable laws.">
+         O usuário é responsável pelo conteúdo publicado e por respeitar as leis aplicáveis.
+      </p>
+    </section>
 
-      <h2>5. Contato</h2>
-      <p>Em caso de dúvidas, entre em contato pelo e-mail: <strong>projetoscosanostra@gmail.com</strong>.</p>
-    </div>
-
-    <div class="lang lang-en" style="display:none;">
-      <h2>1. Introduction</h2>
-      <p>Welcome to the <strong>Cosa Nostra Grow</strong> project. By accessing and using our services, you agree to these Terms of Service.</p>
-
-      <h2>2. Permitted Use</h2>
-      <p>The user agrees to use the system only for legal purposes, respecting the usage rules of social networks and other integrated platforms.</p>
-
-      <h2>3. Responsibility</h2>
-      <p><strong>Cosa Nostra Syndicate</strong> is not responsible for misuse, copyright violations, or non-compliance with third-party platform policies.</p>
-
-      <h2>4. Changes</h2>
-      <p>We reserve the right to update or modify these terms at any time without prior notice. Periodic review is recommended.</p>
-
-      <h2>5. Contact</h2>
-      <p>If you have any questions, please contact us at: <strong>projetoscosanostra@gmail.com</strong>.</p>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Cosa Nostra Syndicate. Todos os direitos reservados.</p>
-    <div class="social-links">
-      <a href="https://github.com/ProjetosCosaNostra" target="_blank">GitHub</a>
-      <a href="https://instagram.com/cosanostra.ai" target="_blank">Instagram</a>
-      <a href="https://tiktok.com/@cosanostra.ia" target="_blank">TikTok</a>
-    </div>
-  </footer>
-
-  <!-- SCRIPT DE LÍNGUA -->
-  <script>
-    function setLanguage(lang) {
-      document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
-      document.querySelector('.lang-' + lang).style.display = 'block';
-    }
-  </script>
+    <footer>
+      <p data-lang-pt="✍️ Última atualização: Setembro/2025" 
+         data-lang-en="✍️ Last updated: September/2025">
+         ✍️ Última atualização: Setembro/2025
+      </p>
+      <button onclick="switchLang()" class="lang-btn">🌐 PT/EN</button>
+    </footer>
+  </div>
 </body>
 </html>
