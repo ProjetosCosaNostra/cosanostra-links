@@ -5,96 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cosa Nostra AI Syndicate</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="lang.js"></script>
+  <link rel="icon" href="assets/logo-512.jpg" type="image/png">
 </head>
 <body>
-
-  <!-- ===========================
-       Hero / Cabeçalho
-  =========================== -->
-  <header class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <img src="assets/logo-512.png" alt="Logo Cosa Nostra" class="logo">
-      <h1 data-pt="🧠 Cosa Nostra AI Syndicate ⚙️📊"
-          data-en="🧠 Cosa Nostra AI Syndicate ⚙️📊">
-          🧠 Cosa Nostra AI Syndicate ⚙️📊
-      </h1>
-      <p data-pt="Criatividade, Automação e Estratégia no estilo Cosa Nostra."
-         data-en="Creativity, Automation and Strategy in the Cosa Nostra style.">
-         Criatividade, Automação e Estratégia no estilo Cosa Nostra.
-      </p>
-      <a href="#redes" class="btn"
-         data-pt="🌐 Acessar Nossas Redes"
-         data-en="🌐 Access Our Networks">🌐 Acessar Nossas Redes</a>
-
-      <!-- Botão de idioma -->
-      <div class="lang-switch">
-        <button onclick="setLang('pt')">🇧🇷 PT</button>
-        <button onclick="setLang('en')">🇺🇸 EN</button>
-      </div>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="logo-container">
+      <img 
+        src="assets/logo.png" 
+        srcset="assets/logo-512.jpg 512w, assets/logo-1024.jpg 1024w" 
+        sizes="(max-width: 600px) 512px, 1024px" 
+        alt="Logo Cosa Nostra" 
+        class="logo"
+      >
+      <h1 class="site-title">Cosa Nostra AI Syndicate</h1>
+      <p class="site-subtitle">Criatividade, Automação e Estratégia no estilo Cosa Nostra.</p>
     </div>
   </header>
 
-  <!-- ===========================
-       Redes Sociais
-  =========================== -->
-  <section id="redes" class="section">
-    <h2 data-pt="🌐 Onde Estamos" data-en="🌐 Where to Find Us">🌐 Onde Estamos</h2>
-    <div class="cards">
-      <a href="https://tiktok.com/@cosanostra.ia" target="_blank" class="card">🎬 TikTok</a>
-      <a href="https://instagram.com/cosanostra.ai" target="_blank" class="card">📸 Instagram</a>
-      <a href="https://youtube.com/" target="_blank" class="card">▶️ YouTube</a>
-      <a href="https://facebook.com/" target="_blank" class="card">📘 Facebook</a>
-      <a href="https://github.com/ProjetosCosaNostra" target="_blank" class="card">🧑‍💻 GitHub</a>
-      <a href="https://linkedin.com/in/felipecosanostra" target="_blank" class="card">💼 LinkedIn</a>
+  <!-- ===== CTA PRINCIPAL ===== -->
+  <section class="cta">
+    <a href="links.html" class="btn-primary">🌐 Acessar Nossas Redes</a>
+    <div class="lang-switch">
+      <button class="btn-lang">🇧🇷 PT</button>
+      <button class="btn-lang">🇺🇸 EN</button>
     </div>
   </section>
 
-  <!-- ===========================
-       Sobre o Projeto
-  =========================== -->
-  <section id="sobre" class="section alt">
-    <h2 data-pt="🎯 Sobre o Projeto" data-en="🎯 About the Project">🎯 Sobre o Projeto</h2>
-    <p data-pt="O Cosa Nostra AI Syndicate nasceu da união entre Inteligência Artificial, automação digital e criatividade estratégica."
-       data-en="The Cosa Nostra AI Syndicate was born from the union of Artificial Intelligence, digital automation, and strategic creativity.">
-       O Cosa Nostra AI Syndicate nasceu da união entre Inteligência Artificial, automação digital e criatividade estratégica.
+  <!-- ===== SOBRE ===== -->
+  <section class="about">
+    <h2>Sobre o Projeto</h2>
+    <p>
+      O <strong>Cosa Nostra AI Syndicate</strong> é um ecossistema criativo que une 
+      <span class="highlight">Inteligência Artificial</span>, 
+      <span class="highlight">Humor</span>, 
+      <span class="highlight">Automação</span> 
+      e <span class="highlight">Estratégias Digitais</span>.
     </p>
-    <ul>
-      <li data-pt="🔹 Automação e crescimento para redes sociais"
-          data-en="🔹 Automation and growth for social networks">
-          🔹 Automação e crescimento para redes sociais
-      </li>
-      <li data-pt="🔹 Conteúdo criativo com IA + Humor"
-          data-en="🔹 Creative content with AI + Humor">
-          🔹 Conteúdo criativo com IA + Humor
-      </li>
-      <li data-pt="🔹 Projetos originais como: O Capo da Criação, Fantástico Brainrot e Papo de Husk"
-          data-en="🔹 Original projects like: The Creation Capo, Brainrot News and Husk Talk">
-          🔹 Projetos originais como: O Capo da Criação, Fantástico Brainrot e Papo de Husk
-      </li>
+    <ul class="projects">
+      <li>🎭 O Capo da Criação</li>
+      <li>📺 Fantástico Brainrot – Telejornal Satírico</li>
+      <li>🎙️ Papo de Husk – Podcast</li>
     </ul>
   </section>
 
-  <!-- ===========================
-       Rodapé
-  =========================== -->
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <div class="footer-content">
-      <p data-pt="© 2025 Cosa Nostra AI Syndicate – Criatividade, Automação & Estratégia"
-         data-en="© 2025 Cosa Nostra AI Syndicate – Creativity, Automation & Strategy">
-         © 2025 Cosa Nostra AI Syndicate – Criatividade, Automação & Estratégia
-      </p>
-      <div class="social-links">
-        <a href="https://tiktok.com/@cosanostra.ia" target="_blank">🎬 TikTok</a>
-        <a href="https://instagram.com/cosanostra.ai" target="_blank">📸 Instagram</a>
-        <a href="https://youtube.com/" target="_blank">▶️ YouTube</a>
-        <a href="https://facebook.com/" target="_blank">📘 Facebook</a>
-        <a href="https://github.com/ProjetosCosaNostra" target="_blank">🧑‍💻 GitHub</a>
-        <a href="https://linkedin.com/in/felipecosanostra" target="_blank">💼 LinkedIn</a>
-      </div>
-    </div>
+    <p>© 2025 Cosa Nostra AI Syndicate — O Código Eterno.</p>
+    <a href="terms.html">📜 Termos de Serviço</a>
   </footer>
-
 </body>
 </html>
