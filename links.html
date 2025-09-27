@@ -1,48 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Links | Cosa Nostra AI Syndicate</title>
+  <title>🌐 Cosa Nostra AI Syndicate - Links</title>
   <link rel="stylesheet" href="style.css">
-  <script src="lang.js" defer></script>
 </head>
 <body>
   <div class="container">
-
     <!-- Logo -->
     <img src="assets/logo-512.png" alt="Logo Cosa Nostra" class="logo">
 
     <!-- Título -->
-    <h1 class="title">
-      <span class="emoji">🌐</span>
-      <span data-lang="links-title">Nossas Redes</span>
-    </h1>
+    <h1 class="title">🌐 Nossas Redes</h1>
 
-    <!-- Lista de Links -->
-    <div class="links-list">
-      <a href="https://www.tiktok.com/@cosanostra" target="_blank" class="btn-link">🎵 TikTok</a>
-      <a href="https://www.instagram.com/cosanostra" target="_blank" class="btn-link">📸 Instagram</a>
-      <a href="https://www.youtube.com/@cosanostra" target="_blank" class="btn-link">▶️ YouTube</a>
-      <a href="https://www.kwai.com/cosanostra" target="_blank" class="btn-link">🎬 Kwai</a>
-      <a href="https://www.facebook.com/cosanostra" target="_blank" class="btn-link">📘 Facebook</a>
-      <a href="https://github.com/ProjetosCosaNostra" target="_blank" class="btn-link">💻 GitHub</a>
-      <a href="https://www.linkedin.com/company/cosanostra" target="_blank" class="btn-link">💼 LinkedIn</a>
+    <!-- Lista de Cards -->
+    <div class="cards">
+      <a href="https://tiktok.com/@cosanostra.ia" class="card" target="_blank">
+        <div class="card-icon">🎬</div>
+        <div class="card-text">
+          <h3>TikTok</h3>
+          <p>Vídeos criativos com IA + Humor</p>
+        </div>
+      </a>
+
+      <a href="https://instagram.com/cosanostra.ai" class="card" target="_blank">
+        <div class="card-icon">📸</div>
+        <div class="card-text">
+          <h3>Instagram</h3>
+          <p>Clipes, memes e bastidores</p>
+        </div>
+      </a>
+
+      <a href="#" class="card" target="_blank">
+        <div class="card-icon">▶️</div>
+        <div class="card-text">
+          <h3>YouTube</h3>
+          <p>Projetos completos e séries criativas</p>
+        </div>
+      </a>
+
+      <a href="#" class="card" target="_blank">
+        <div class="card-icon">🎥</div>
+        <div class="card-text">
+          <h3>Kwai</h3>
+          <p>Conteúdos rápidos e divertidos</p>
+        </div>
+      </a>
+
+      <a href="#" class="card" target="_blank">
+        <div class="card-icon">📘</div>
+        <div class="card-text">
+          <h3>Facebook</h3>
+          <p>Comunidade e atualizações</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/ProjetosCosaNostra" class="card" target="_blank">
+        <div class="card-icon">🧑‍💻</div>
+        <div class="card-text">
+          <h3>GitHub</h3>
+          <p>Projetos e código aberto</p>
+        </div>
+      </a>
+
+      <a href="https://linkedin.com/in/felipecosanostra" class="card" target="_blank">
+        <div class="card-icon">💼</div>
+        <div class="card-text">
+          <h3>LinkedIn</h3>
+          <p>Networking e projetos finalizados</p>
+        </div>
+      </a>
     </div>
 
     <!-- Botão para voltar -->
-    <a href="index.html" class="btn-main" data-lang="btn-back">⬅ Voltar à Página Inicial</a>
+    <a href="index.html" class="btn-main">⬅️ Voltar</a>
 
-    <!-- Botões de idioma -->
+    <!-- Idiomas -->
     <div class="lang-switch">
-      <button onclick="setLanguage('pt')" class="lang-btn">🇧🇷 PT</button>
-      <button onclick="setLanguage('en')" class="lang-btn">🇺🇸 EN</button>
+      <button onclick="setLanguage('pt')" class="lang-btn">🇧🇷 Português</button>
+      <button onclick="setLanguage('en')" class="lang-btn">🇺🇸 English</button>
     </div>
   </div>
 
   <!-- Rodapé -->
   <footer>
-    <p>© 2025 Cosa Nostra Syndicate — O Código Eterno.</p>
+    <p>© 2025 Cosa Nostra AI Syndicate. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
