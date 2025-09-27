@@ -1,93 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🌐 Cosa Nostra AI Syndicate - Links</title>
+  <title>Cosa Nostra – Links Oficiais</title>
   <link rel="stylesheet" href="style.css">
+  <script src="lang.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <!-- Logo -->
-    <img src="assets/logo-512.png" alt="Logo Cosa Nostra" class="logo">
+  <!-- Fundo estilizado -->
+  <div class="overlay"></div>
+
+  <main class="container">
+    <!-- LOGO -->
+    <img src="assets/logo-512.png" alt="Cosa Nostra Logo" class="logo">
 
     <!-- Título -->
-    <h1 class="title">🌐 Nossas Redes</h1>
+    <h1 data-lang-pt="🌐 Links Oficiais" data-lang-en="🌐 Official Links">🌐 Links Oficiais</h1>
+    <p class="subtitle" 
+       data-lang-pt="Navegue por todas as nossas redes e projetos oficiais." 
+       data-lang-en="Explore all our official networks and projects.">
+       Navegue por todas as nossas redes e projetos oficiais.
+    </p>
 
-    <!-- Lista de Cards -->
-    <div class="cards">
-      <a href="https://tiktok.com/@cosanostra.ia" class="card" target="_blank">
-        <div class="card-icon">🎬</div>
-        <div class="card-text">
-          <h3>TikTok</h3>
-          <p>Vídeos criativos com IA + Humor</p>
-        </div>
-      </a>
+    <!-- Botões de Links -->
+    <div class="links">
+      <a href="https://tiktok.com/@cosanostra.ia" target="_blank" 
+         data-lang-pt="🎬 TikTok" data-lang-en="🎬 TikTok">🎬 TikTok</a>
 
-      <a href="https://instagram.com/cosanostra.ai" class="card" target="_blank">
-        <div class="card-icon">📸</div>
-        <div class="card-text">
-          <h3>Instagram</h3>
-          <p>Clipes, memes e bastidores</p>
-        </div>
-      </a>
+      <a href="https://instagram.com/cosanostra.ai" target="_blank" 
+         data-lang-pt="📸 Instagram" data-lang-en="📸 Instagram">📸 Instagram</a>
 
-      <a href="#" class="card" target="_blank">
-        <div class="card-icon">▶️</div>
-        <div class="card-text">
-          <h3>YouTube</h3>
-          <p>Projetos completos e séries criativas</p>
-        </div>
-      </a>
+      <a href="https://youtube.com" target="_blank" 
+         data-lang-pt="▶️ YouTube" data-lang-en="▶️ YouTube">▶️ YouTube</a>
 
-      <a href="#" class="card" target="_blank">
-        <div class="card-icon">🎥</div>
-        <div class="card-text">
-          <h3>Kwai</h3>
-          <p>Conteúdos rápidos e divertidos</p>
-        </div>
-      </a>
+      <a href="https://kwai.com" target="_blank" 
+         data-lang-pt="🎥 Kwai" data-lang-en="🎥 Kwai">🎥 Kwai</a>
 
-      <a href="#" class="card" target="_blank">
-        <div class="card-icon">📘</div>
-        <div class="card-text">
-          <h3>Facebook</h3>
-          <p>Comunidade e atualizações</p>
-        </div>
-      </a>
+      <a href="https://facebook.com" target="_blank" 
+         data-lang-pt="📘 Facebook" data-lang-en="📘 Facebook">📘 Facebook</a>
 
-      <a href="https://github.com/ProjetosCosaNostra" class="card" target="_blank">
-        <div class="card-icon">🧑‍💻</div>
-        <div class="card-text">
-          <h3>GitHub</h3>
-          <p>Projetos e código aberto</p>
-        </div>
-      </a>
+      <a href="https://github.com/ProjetosCosaNostra" target="_blank" 
+         data-lang-pt="🧑‍💻 GitHub" data-lang-en="🧑‍💻 GitHub">🧑‍💻 GitHub</a>
 
-      <a href="https://linkedin.com/in/felipecosanostra" class="card" target="_blank">
-        <div class="card-icon">💼</div>
-        <div class="card-text">
-          <h3>LinkedIn</h3>
-          <p>Networking e projetos finalizados</p>
-        </div>
-      </a>
+      <a href="https://linkedin.com/in/felipecosanostra" target="_blank" 
+         data-lang-pt="💼 LinkedIn" data-lang-en="💼 LinkedIn">💼 LinkedIn</a>
     </div>
 
-    <!-- Botão para voltar -->
-    <a href="index.html" class="btn-main">⬅️ Voltar</a>
+    <!-- Rodapé -->
+    <footer>
+      <p data-lang-pt="© 2025 Cosa Nostra Syndicate – Todos os direitos reservados." 
+         data-lang-en="© 2025 Cosa Nostra Syndicate – All rights reserved.">
+         © 2025 Cosa Nostra Syndicate – Todos os direitos reservados.
+      </p>
+    </footer>
 
-    <!-- Idiomas -->
-    <div class="lang-switch">
-      <button onclick="setLanguage('pt')" class="lang-btn">🇧🇷 Português</button>
-      <button onclick="setLanguage('en')" class="lang-btn">🇺🇸 English</button>
-    </div>
-  </div>
-
-  <!-- Rodapé -->
-  <footer>
-    <p>© 2025 Cosa Nostra AI Syndicate. Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <!-- Botão de idioma -->
+    <button id="lang-toggle">🌍 EN/PT</button>
+  </main>
 </body>
 </html>
