@@ -1,62 +1,123 @@
-<!-- FILE: assets/css/style.css -->
-/* Base style for CosaNostra site - dark luxe */
-:root{
---bg:#080707; /* deep black */
---gold:#c9a34e;
---accent:#a83232;
---muted:#cfc7bf;
---card:#0f0f0f;
+/* ===== Reset básico ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-*{box-sizing:border-box}
-html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
-.site-body{background:var(--bg);color:var(--muted);}
-.container{max-width:1100px;margin:0 auto;padding:28px}
-.site-header{padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
-.header-inner{display:flex;align-items:center;justify-content:space-between}
-.logo{height:86px}
-.logo-small{height:48px}
-.main-nav a{color:var(--muted);text-decoration:none;margin-left:18px}
-.main-nav a:hover{color:var(--gold)}
-.hero{padding:64px 0}
-.hero-title{font-family:'Playfair Display', 'Merriweather', serif;font-size:44px;color:var(--gold);margin:0}
-.hero-sub{margin:12px 0 24px;color:rgba(255,255,255,0.75)}
-.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600}
-.btn.primary{background:linear-gradient(90deg, var(--gold), #b88f3f);color:#0b0b0b}
-.btn.outline{border:1px solid rgba(201,163,78,0.12);color:var(--muted)}
-.btn.small{padding:8px 12px;font-size:14px}
-.hero-actions{margin-top:18px}
-.highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
-.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:18px;border-radius:12px}
-.card h3{color:var(--gold);margin:0 0 8px}
-.links-page .links-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-top:20px}
-.social-card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;display:flex;flex-direction:column;align-items:center;text-decoration:none;color:var(--muted)}
-.social-card img{height:44px;margin-bottom:8px;filter:grayscale(1) brightness(0.9)}
-.social-card span{font-weight:700}
-.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:20px}
-.project-card{padding:18px;border-radius:10px;background:rgba(255,255,255,0.02)}
-.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:30px 0;margin-top:40px}
-.footer-grid{display:flex;gap:24px;align-items:center}
-.product-highlight{display:flex;gap:28px;margin-top:24px;flex-wrap:wrap}
-.product-card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;flex:1}
-.product-brief{background:rgba(255,255,255,0.015);padding:18px;border-radius:12px;width:320px}
-.lead{color:rgba(255,255,255,0.8)}
-.note{font-size:13px;color:rgba(255,255,255,0.5);margin-top:12px}
-@media(max-width:900px){.highlights{grid-template-columns:1fr}.header-inner{flex-direction:column;gap:12px}.footer-grid{flex-direction:column;align-items:flex-start}}
 
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0e0e0e url("../img/bg.png") no-repeat center top fixed;
+  background-size: cover;
+  color: #f4f4f4;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
----
+/* ===== Cabeçalho ===== */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(20, 20, 20, 0.85);
+  border-bottom: 2px solid #222;
+}
 
+header .logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
 
-<!-- FILE: assets/icons (place SVGs here) -->
-/* icons: tiktok.svg, youtube.svg, instagram.svg, facebook.svg, linkedin.svg, github.svg, kwai.svg */
+header h1 {
+  font-size: 1.8rem;
+  color: #ffd700;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}
 
+/* ===== Seções principais ===== */
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+  text-align: center;
+}
 
----
+section {
+  margin: 2rem auto;
+  max-width: 700px;
+  background: rgba(30, 30, 30, 0.8);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
 
+section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #ffd700;
+}
 
-<!-- FILE: assets/img (place images here) -->
-/* logo-gold.png (recommended 512x512)
-logo-gold-small.png (recommended 160x160)
-favicon.png (32x32)
-product-placeholder.png
-*/
+/* ===== Links principais ===== */
+.links {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.links li {
+  margin: 0.8rem 0;
+}
+
+.links a {
+  display: block;
+  padding: 0.8rem 1.2rem;
+  background: linear-gradient(90deg, #111, #333);
+  color: #ffd700;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.links a:hover {
+  background: linear-gradient(90deg, #ffd700, #ff8c00);
+  color: #111;
+  transform: translateY(-3px);
+}
+
+/* ===== Botões ===== */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #ffd700;
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff8c00;
+  transform: scale(1.05);
+}
+
+/* ===== Rodapé ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(20, 20, 20, 0.85);
+  border-top: 2px solid #222;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
